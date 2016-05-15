@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090EB7767BFF66B84B717CFB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201AA1C068C08C32BF0F82BA /* Pods.framework */; };
 		A317708D1CE569180091BD49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317708C1CE569180091BD49 /* AppDelegate.swift */; };
 		A317708F1CE569180091BD49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317708E1CE569180091BD49 /* ViewController.swift */; };
 		A31770921CE569180091BD49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31770901CE569180091BD49 /* Main.storyboard */; };
@@ -14,6 +15,14 @@
 		A31770971CE569180091BD49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31770951CE569180091BD49 /* LaunchScreen.storyboard */; };
 		A31770A21CE569180091BD49 /* CiYanLeeProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770A11CE569180091BD49 /* CiYanLeeProTests.swift */; };
 		A31770AD1CE569180091BD49 /* CiYanLeeProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770AC1CE569180091BD49 /* CiYanLeeProUITests.swift */; };
+		A31770CD1CE6D59E0091BD49 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770CC1CE6D59E0091BD49 /* Theme.swift */; };
+		A31770CF1CE6D6EF0091BD49 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770CE1CE6D6EF0091BD49 /* GuideViewController.swift */; };
+		A31770D11CE6D7850091BD49 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770D01CE6D7850091BD49 /* ADViewController.swift */; };
+		A31770D31CE80E830091BD49 /* GuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770D21CE80E830091BD49 /* GuideCollectionViewCell.swift */; };
+		A31770D51CE829FF0091BD49 /* AnimationTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770D41CE829FF0091BD49 /* AnimationTabBarViewController.swift */; };
+		A31770D71CE8645F0091BD49 /* ShopCarRedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770D61CE8645F0091BD49 /* ShopCarRedDotView.swift */; };
+		A31770D91CE86A510091BD49 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770D81CE86A510091BD49 /* UIView + Extension.swift */; };
+		A31770DF1CE8D3050091BD49 /* ShopCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31770DE1CE8D3050091BD49 /* ShopCartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201AA1C068C08C32BF0F82BA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6683C4FCA4F5EE129C25496D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A31770891CE569180091BD49 /* CiYanLeePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiYanLeePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A317708C1CE569180091BD49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A317708E1CE569180091BD49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,16 @@
 		A31770A81CE569180091BD49 /* CiYanLeeProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiYanLeeProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31770AC1CE569180091BD49 /* CiYanLeeProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiYanLeeProUITests.swift; sourceTree = "<group>"; };
 		A31770AE1CE569180091BD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31770C81CE5CE2E0091BD49 /* CiYanLeePro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CiYanLeePro-Bridging-Header.h"; sourceTree = "<group>"; };
+		A31770CC1CE6D59E0091BD49 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A31770CE1CE6D6EF0091BD49 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		A31770D01CE6D7850091BD49 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		A31770D21CE80E830091BD49 /* GuideCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCollectionViewCell.swift; sourceTree = "<group>"; };
+		A31770D41CE829FF0091BD49 /* AnimationTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTabBarViewController.swift; sourceTree = "<group>"; };
+		A31770D61CE8645F0091BD49 /* ShopCarRedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCarRedDotView.swift; sourceTree = "<group>"; };
+		A31770D81CE86A510091BD49 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		A31770DE1CE8D3050091BD49 /* ShopCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartViewController.swift; sourceTree = "<group>"; };
+		D970AE0D5094EAB9CFC62F47 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090EB7767BFF66B84B717CFB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +96,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520071D93B8E5696607EFD7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D970AE0D5094EAB9CFC62F47 /* Pods.debug.xcconfig */,
+				6683C4FCA4F5EE129C25496D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		752C0F7AF8702404B005855D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				201AA1C068C08C32BF0F82BA /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A31770801CE569180091BD49 = {
 			isa = PBXGroup;
 			children = (
+				A31770BA1CE56A9B0091BD49 /* ADAndGuide */,
+				A31770BB1CE56A9B0091BD49 /* APIService */,
+				A31770BC1CE56A9B0091BD49 /* Category */,
+				A31770BD1CE56A9B0091BD49 /* Common */,
+				A31770BE1CE56A9B0091BD49 /* DataBase */,
+				A31770BF1CE56A9B0091BD49 /* Extension */,
+				A31770C01CE56A9B0091BD49 /* FrameWork */,
+				A31770C11CE56A9B0091BD49 /* MainTabbar */,
+				A31770C21CE56A9B0091BD49 /* Resources */,
+				A31770C31CE56A9B0091BD49 /* Section */,
+				A31770C41CE56A9B0091BD49 /* Tools */,
+				A31770C51CE56A9B0091BD49 /* UserInfo */,
+				A31770C61CE56A9B0091BD49 /* Vender */,
 				A317708B1CE569180091BD49 /* CiYanLeePro */,
 				A31770A01CE569180091BD49 /* CiYanLeeProTests */,
 				A31770AB1CE569180091BD49 /* CiYanLeeProUITests */,
 				A317708A1CE569180091BD49 /* Products */,
+				520071D93B8E5696607EFD7B /* Pods */,
+				752C0F7AF8702404B005855D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +179,151 @@
 			path = CiYanLeeProUITests;
 			sourceTree = "<group>";
 		};
+		A31770BA1CE56A9B0091BD49 /* ADAndGuide */ = {
+			isa = PBXGroup;
+			children = (
+				A31770CE1CE6D6EF0091BD49 /* GuideViewController.swift */,
+				A31770D21CE80E830091BD49 /* GuideCollectionViewCell.swift */,
+				A31770D01CE6D7850091BD49 /* ADViewController.swift */,
+			);
+			name = ADAndGuide;
+			path = CiYanLeePro/ADAndGuide;
+			sourceTree = "<group>";
+		};
+		A31770BB1CE56A9B0091BD49 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = APIService;
+			path = CiYanLeePro/APIService;
+			sourceTree = "<group>";
+		};
+		A31770BC1CE56A9B0091BD49 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Category;
+			path = CiYanLeePro/Category;
+			sourceTree = "<group>";
+		};
+		A31770BD1CE56A9B0091BD49 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A31770CC1CE6D59E0091BD49 /* Theme.swift */,
+			);
+			name = Common;
+			path = CiYanLeePro/Common;
+			sourceTree = "<group>";
+		};
+		A31770BE1CE56A9B0091BD49 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataBase;
+			path = CiYanLeePro/DataBase;
+			sourceTree = "<group>";
+		};
+		A31770BF1CE56A9B0091BD49 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A31770D81CE86A510091BD49 /* UIView + Extension.swift */,
+			);
+			name = Extension;
+			path = CiYanLeePro/Extension;
+			sourceTree = "<group>";
+		};
+		A31770C01CE56A9B0091BD49 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FrameWork;
+			path = CiYanLeePro/FrameWork;
+			sourceTree = "<group>";
+		};
+		A31770C11CE56A9B0091BD49 /* MainTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A31770D41CE829FF0091BD49 /* AnimationTabBarViewController.swift */,
+				A31770D61CE8645F0091BD49 /* ShopCarRedDotView.swift */,
+			);
+			name = MainTabbar;
+			path = CiYanLeePro/MainTabbar;
+			sourceTree = "<group>";
+		};
+		A31770C21CE56A9B0091BD49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = CiYanLeePro/Resources;
+			sourceTree = "<group>";
+		};
+		A31770C31CE56A9B0091BD49 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				A31770DA1CE8D2EA0091BD49 /* ShopCart */,
+			);
+			name = Section;
+			path = CiYanLeePro/Section;
+			sourceTree = "<group>";
+		};
+		A31770C41CE56A9B0091BD49 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A31770C81CE5CE2E0091BD49 /* CiYanLeePro-Bridging-Header.h */,
+			);
+			name = Tools;
+			path = CiYanLeePro/Tools;
+			sourceTree = "<group>";
+		};
+		A31770C51CE56A9B0091BD49 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UserInfo;
+			path = CiYanLeePro/UserInfo;
+			sourceTree = "<group>";
+		};
+		A31770C61CE56A9B0091BD49 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vender;
+			path = CiYanLeePro/Vender;
+			sourceTree = "<group>";
+		};
+		A31770DA1CE8D2EA0091BD49 /* ShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				A31770DB1CE8D2EA0091BD49 /* Contollers */,
+				A31770DC1CE8D2EA0091BD49 /* Models */,
+				A31770DD1CE8D2EA0091BD49 /* Views */,
+			);
+			path = ShopCart;
+			sourceTree = "<group>";
+		};
+		A31770DB1CE8D2EA0091BD49 /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				A31770DE1CE8D3050091BD49 /* ShopCartViewController.swift */,
+			);
+			path = Contollers;
+			sourceTree = "<group>";
+		};
+		A31770DC1CE8D2EA0091BD49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A31770DD1CE8D2EA0091BD49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A31770B11CE569180091BD49 /* Build configuration list for PBXNativeTarget "CiYanLeePro" */;
 			buildPhases = (
+				95335ABDBCF489914C1AF5B2 /* Check Pods Manifest.lock */,
 				A31770851CE569180091BD49 /* Sources */,
 				A31770861CE569180091BD49 /* Frameworks */,
 				A31770871CE569180091BD49 /* Resources */,
+				7AD72C4F4D2B04C0945F4806 /* Embed Pods Frameworks */,
+				644DA98363B2DA889FE78558 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +453,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		644DA98363B2DA889FE78558 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD72C4F4D2B04C0945F4806 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95335ABDBCF489914C1AF5B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A31770851CE569180091BD49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31770CD1CE6D59E0091BD49 /* Theme.swift in Sources */,
+				A31770D31CE80E830091BD49 /* GuideCollectionViewCell.swift in Sources */,
+				A31770DF1CE8D3050091BD49 /* ShopCartViewController.swift in Sources */,
+				A31770D11CE6D7850091BD49 /* ADViewController.swift in Sources */,
+				A31770CF1CE6D6EF0091BD49 /* GuideViewController.swift in Sources */,
+				A31770D51CE829FF0091BD49 /* AnimationTabBarViewController.swift in Sources */,
 				A317708F1CE569180091BD49 /* ViewController.swift in Sources */,
 				A317708D1CE569180091BD49 /* AppDelegate.swift in Sources */,
+				A31770D71CE8645F0091BD49 /* ShopCarRedDotView.swift in Sources */,
+				A31770D91CE86A510091BD49 /* UIView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,23 +655,30 @@
 		};
 		A31770B21CE569180091BD49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D970AE0D5094EAB9CFC62F47 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CiYanLeePro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halfDoctor.CiYanLeePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CiYanLeePro/Tools/CiYanLeePro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A31770B31CE569180091BD49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6683C4FCA4F5EE129C25496D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CiYanLeePro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halfDoctor.CiYanLeePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CiYanLeePro/Tools/CiYanLeePro-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +747,7 @@
 				A31770B31CE569180091BD49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A31770B41CE569180091BD49 /* Build configuration list for PBXNativeTarget "CiYanLeeProTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +756,7 @@
 				A31770B61CE569180091BD49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A31770B71CE569180091BD49 /* Build configuration list for PBXNativeTarget "CiYanLeeProUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +765,7 @@
 				A31770B91CE569180091BD49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
