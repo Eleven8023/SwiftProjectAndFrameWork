@@ -1,18 +1,30 @@
 PODS:
   - Alamofire (3.4.0)
   - Kingfisher (2.4.1)
+  - ReachabilitySwift (2.3.3)
   - SwiftyJSON (2.3.2)
   - UMengSocialCOM (5.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Kingfisher (~> 2.4.0)
+  - ReachabilitySwift (from `https://github.com/ashleymills/Reachability.swift`)
   - SwiftyJSON (~> 2.3.2)
   - UMengSocialCOM (~> 5.1)
+
+EXTERNAL SOURCES:
+  ReachabilitySwift:
+    :git: https://github.com/ashleymills/Reachability.swift
+
+CHECKOUT OPTIONS:
+  ReachabilitySwift:
+    :commit: fa90df50c04f5743fbdf643cbe8d10562d75673d
+    :git: https://github.com/ashleymills/Reachability.swift
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   UMengSocialCOM: 8fa4732b03757161aaa8aab97be7d980adb9ccdb
 

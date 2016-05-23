@@ -100,8 +100,8 @@ class RAMItemAnimation: NSObject, RAMItemAnimationProtocol {
 class AnimationTabBarViewController: UITabBarController {
 
     var iconsView:[(icon: UIImageView, textLabel:UILabel)] = []
-    var iconsImageName:[String] = ["","","",""]
-    var iconsSelectedImageName:[String] = ["","","",""]
+    var iconsImageName:[String] = ["v2_home","v2_order","shopCart","v2_my"]
+    var iconsSelectedImageName:[String] = ["v2_home_r","v2_order_r","shopCart_r","v2_my_r"]
     var shopCarIcon: UIImageView?
     
     override func viewDidLoad() {
@@ -231,11 +231,23 @@ class AnimationTabBarViewController: UITabBarController {
         if to == 2{
             let vc = childViewControllers[selectedIndex]
             let shopCar = ShopCartViewController()
-//            let 
+            let nav = BaseNavigationVController(rootViewController:shopCar)
+            vc.presentViewController(nav, animated: true, completion: nil)
+            return
         }
+        
+        selectedIndex = to
+        let items = tabBar.items as! [RAMAnimatedTabBarItem]
+        
+        let formIV = iconsView[from].icon
+        formIV.image = UIImage(named: iconsImageName[from])
+        items[from].deselectAnimation(formIV, textLabel: iconsView[from].textLabel)
+        
+        let toIV = iconsView[to].icon
+        toIV.image = UIImage(named: iconsSelectedImageName[to])
+        items[to].playAnimation(toIV, textLabel: iconsView[to].textLabel)
+        
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

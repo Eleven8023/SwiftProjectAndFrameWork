@@ -53,8 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func showMainTabBarController(){
 //        window!.rootViewController =
     }
-    
+    // MARK: - 设置友盟
     func setUM(){
+     
+        UMSocialData.setAppKey("569f662be0f55a0efa0001cc")
+        UMSocialWechatHandler.setWXAppId("wxb81a61739edd3054", appSecret: "c62eba630d950ff107e62fe08391d19d", url: "https://github.com/ZhongTaoTian")
+        UMSocialQQHandler.setQQWithAppId("1105057589", appKey: "Zsc4rA9VaOjexv8z", url: "http://www.jianshu.com")
+        UMSocialSinaSSOHandler.openNewSinaSSOWithAppKey("1939108327", secret: "", redirectURL: "http://sns.whalecloud.com/sina2/callback")
+        UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession, UMShareToQzone, UMShareToQQ, UMShareToSina, UMShareToWechatTimeline])
         
     }
     
