@@ -131,7 +131,8 @@ class AnimationTabBarViewController: UITabBarController {
         }
         
         for index in 0..<customItems.count{
-//            let viewContainer = 
+            let viewContainer =  createViewContainer(index)
+            containersDict["container\(index)"] = viewContainer
         }
         return containersDict
     }
@@ -210,14 +211,15 @@ class AnimationTabBarViewController: UITabBarController {
                 
                 if index == 0 {
                     selectedIndex = 0
-//                    selecteItem(0)
+                    selectItem(0)
                 }
             }
         }
     }
     
     override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
-        
+     
+        setSelectIndex(from: selectedIndex, to: item.tag)
     }
     
     func selectItem(index:Int){

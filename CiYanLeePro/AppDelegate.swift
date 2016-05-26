@@ -17,14 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         NSThread.sleepForTimeInterval(1.0)
         
-        setUM()
+//        setUM()
+        setAppSubject()
         setKeyWindow()
         addNotification()
-        setAppSubject()
         
         // Override point for customization after application launch.
         return true
     }
+    
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     // MARK:配置window
     private func setKeyWindow(){
         window = UIWindow(frame: ScreenBounds)
@@ -35,7 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = GuideViewController()
             NSUserDefaults.standardUserDefaults().setObject("isFirstOpenApp", forKey: "isFirstOpenApp")
         }else{
-            loadADRootViewController()
+            
+            showMainTabBarController()
+//            loadADRootViewController()
         }
     }
     
@@ -51,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     // MARK:- Action
     func showMainTabBarController(){
-//        window!.rootViewController =
+        window!.rootViewController = MainTabBarViewController()
     }
     // MARK: - 设置友盟
     func setUM(){

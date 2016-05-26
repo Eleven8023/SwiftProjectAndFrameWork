@@ -47,6 +47,10 @@
 		A317718C1CEEDCA80091BD49 /* HomePageTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317718B1CEEDCA80091BD49 /* HomePageTitleViewController.swift */; };
 		A317718E1CEEDD5C0091BD49 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317718D1CEEDD5C0091BD49 /* UIBarButtonItem+Extension.swift */; };
 		A31771901CEEDF170091BD49 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317718F1CEEDF170091BD49 /* UpImageDownTextButton.swift */; };
+		A36804821CF2E1D2003ED5CC /* AdressTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36804811CF2E1D2003ED5CC /* AdressTitleView.swift */; };
+		A36804841CF2E520003ED5CC /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36804831CF2E520003ED5CC /* HomePageViewController.swift */; };
+		A36804861CF401CC003ED5CC /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36804851CF401CC003ED5CC /* MineViewController.swift */; };
+		A368048C1CF40280003ED5CC /* SupermarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368048B1CF40280003ED5CC /* SupermarketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,10 @@
 		A317718B1CEEDCA80091BD49 /* HomePageTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageTitleViewController.swift; sourceTree = "<group>"; };
 		A317718D1CEEDD5C0091BD49 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		A317718F1CEEDF170091BD49 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
+		A36804811CF2E1D2003ED5CC /* AdressTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressTitleView.swift; sourceTree = "<group>"; };
+		A36804831CF2E520003ED5CC /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		A36804851CF401CC003ED5CC /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		A368048B1CF40280003ED5CC /* SupermarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupermarketViewController.swift; sourceTree = "<group>"; };
 		D970AE0D5094EAB9CFC62F47 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,6 +327,7 @@
 		A31770C31CE56A9B0091BD49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				A36804871CF40257003ED5CC /* SuperMarket */,
 				A31771831CEEB8360091BD49 /* MinePage */,
 				A317717F1CEEB7E50091BD49 /* HomePage */,
 				A31770DA1CE8D2EA0091BD49 /* ShopCart */,
@@ -428,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				A317718B1CEEDCA80091BD49 /* HomePageTitleViewController.swift */,
+				A36804831CF2E520003ED5CC /* HomePageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -435,6 +445,7 @@
 		A31771821CEEB7E50091BD49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A36804811CF2E1D2003ED5CC /* AdressTitleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -459,11 +470,44 @@
 		A31771851CEEB8360091BD49 /* ViewCotrollers */ = {
 			isa = PBXGroup;
 			children = (
+				A36804851CF401CC003ED5CC /* MineViewController.swift */,
 			);
 			path = ViewCotrollers;
 			sourceTree = "<group>";
 		};
 		A31771861CEEB8360091BD49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A36804871CF40257003ED5CC /* SuperMarket */ = {
+			isa = PBXGroup;
+			children = (
+				A36804881CF40257003ED5CC /* Models */,
+				A36804891CF40257003ED5CC /* ViewControllers */,
+				A368048A1CF40257003ED5CC /* Views */,
+			);
+			path = SuperMarket;
+			sourceTree = "<group>";
+		};
+		A36804881CF40257003ED5CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A36804891CF40257003ED5CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A368048B1CF40280003ED5CC /* SupermarketViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A368048A1CF40257003ED5CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -660,10 +704,14 @@
 				A31770CD1CE6D59E0091BD49 /* Theme.swift in Sources */,
 				A31770D31CE80E830091BD49 /* GuideCollectionViewCell.swift in Sources */,
 				A31770D11CE6D7850091BD49 /* ADViewController.swift in Sources */,
+				A36804821CF2E1D2003ED5CC /* AdressTitleView.swift in Sources */,
+				A36804841CF2E520003ED5CC /* HomePageViewController.swift in Sources */,
 				A317717D1CEDB6750091BD49 /* View+SnapKit.swift in Sources */,
 				A31770F91CEAC9FD0091BD49 /* HTTPDataProcess.swift in Sources */,
+				A36804861CF401CC003ED5CC /* MineViewController.swift in Sources */,
 				A31770F71CE9DE460091BD49 /* HTTPNetworkMonitor.swift in Sources */,
 				A31770CF1CE6D6EF0091BD49 /* GuideViewController.swift in Sources */,
+				A368048C1CF40280003ED5CC /* SupermarketViewController.swift in Sources */,
 				A31770D51CE829FF0091BD49 /* AnimationTabBarViewController.swift in Sources */,
 				A31771001CEB03ED0091BD49 /* HTTPRequestManager.swift in Sources */,
 				A317708F1CE569180091BD49 /* ViewController.swift in Sources */,

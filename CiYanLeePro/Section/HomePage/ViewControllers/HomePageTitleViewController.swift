@@ -19,9 +19,18 @@ class HomePageTitleViewController: AnimationTabBarViewController {
 
     // MARK: - Build UI
     private func buildNavigationItem() {
-//        navigationItem.leftBarButtonItem = UIBarButtonItem.
+        navigationItem.leftBarButtonItem = UIBarButtonItem.barButton("扫一扫", titleColor: UIColor.blackColor(), image: UIImage(named: "icon_black_scancode")!, hightLightImage: nil, target: self, action: #selector(HomePageTitleViewController.leftItemClick), type: ItemButtonType.Left)
+        navigationItem.rightBarButtonItem = UIBarButtonItem.barButton("搜索", titleColor: UIColor.blackColor(), image: UIImage(named: "icon_search")!, hightLightImage: nil, target: self, action: #selector(HomePageTitleViewController.rightItemClick), type: ItemButtonType.Right)
+        navigationItem.title = "首 页"
     }
     
+    func leftItemClick() {
+        print("item left")
+    }
+    
+    func rightItemClick() {
+        print("item right")
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
