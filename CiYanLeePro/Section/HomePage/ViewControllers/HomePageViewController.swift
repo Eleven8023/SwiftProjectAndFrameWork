@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class HomePageViewController: HomePageTitleViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        Alamofire.request(.GET, "http://api.budejie.com/api/api_open.php?a=tag_recommend&c=topic&action=sub", parameters: nil, encoding: .URL, headers: nil).responseJSON { (
+            resp) in
+            if let error = resp.result.error{
+                print(error)
+            }else if let value = resp.result.value{
+                print(value)
+                let home = HomeModel.loadHomePageData(value as! NSMutableArray)
+                print(home[0].theme_name)
+            }
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

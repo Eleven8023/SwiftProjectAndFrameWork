@@ -9,10 +9,10 @@
 import UIKit
 
 class HomePageTitleViewController: AnimationTabBarViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.cyanColor()
         buildNavigationItem()
         // Do any additional setup after loading the view.
     }
